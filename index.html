@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>✨ Hogwarts Exam Spell List ✨</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=MedievalSharp&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="magical-background">
+    <div class="floating-candles"></div>
+    <div class="magic-sparkles"></div>
+    <div class="flying-objects"></div>
+    <div class="floating-books"></div>
+    <div class="floating-potions"></div>
+  </div>
+
+  <div class="container">
+    <div class="header-section">
+      <h1>✨ Hogwarts Exam Spell List ✨</h1>
+      <div class="house-selector">
+        <button class="house-btn gryffindor" data-house="gryffindor">Gryffindor 🦁</button>
+        <button class="house-btn slytherin" data-house="slytherin">Slytherin 🐍</button>
+        <button class="house-btn ravenclaw" data-house="ravenclaw">Ravenclaw 🦅</button>
+        <button class="house-btn hufflepuff" data-house="hufflepuff">Hufflepuff 🦡</button>
+      </div>
+      <div class="house-points">House Points: <span id="points">0</span></div>
+      <div class="wizard-level">Wizard Level: <span id="level">First-Year</span></div>
+      <div class="quote"></div>
+    </div>
+
+    <div class="task-input">
+      <input type="text" id="taskInput" placeholder="Enter your spell...">
+      <input type="number" id="timeInput" placeholder="Time in minutes" min="1">
+      <button class="magical-button" id="addTaskBtn">Add Spell</button>
+    </div>
+
+    <div class="task-counter">Active Spells: <span id="taskCount">0</span></div>
+    <ul id="taskList" class="task-list"></ul>
+
+    <div class="theme-toggle">
+      <button class="magical-button" id="lumosBtn">Lumos 💡</button>
+      <button class="magical-button" id="noxBtn">Nox 🌙</button>
+    </div>
+  </div>
+
+  <div class="completed-tasks-container">
+    <h2>Completed Spells 📚</h2>
+    <div class="completed-tasks-list" id="completedTasksList"></div>
+  </div>
+
+  <div class="wand-container">
+    <div id="wand" class="wand">🪄</div>
+  </div>
+
+  <div id="quizModal" class="modal">
+    <div class="modal-content">
+      <h2>Professor's Surprise Quiz! 🧙‍♂️</h2>
+      <p id="quizQuestion"></p>
+      <div id="quizOptions"></div>
+    </div>
+  </div>
+
+  <div id="levelUpModal" class="modal">
+    <div class="modal-content">
+      <h2>Level Up! 🎉</h2>
+      <p id="levelUpMessage"></p>
+      <div class="badge-container"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html> 
